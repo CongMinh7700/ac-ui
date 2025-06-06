@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Source') {
             steps {
-                git credentialsId: 'CongMinh7700', url: 'https://github.com/CongMinh1310/ac-ui.git', branch: 'main'
+                git credentialsId: 'CongMinh7700', url: 'https://github.com/CongMinh7700/ac-ui.git', branch: 'main'
             }
         }
 
