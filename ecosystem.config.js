@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: "weather-ui",
+    name: "ac-ui",
     script: "serve",
     env: {
       PM2_SERVE_PATH: './build',

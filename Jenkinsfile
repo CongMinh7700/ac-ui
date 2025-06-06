@@ -5,13 +5,13 @@ pipeline {
         NODEJS_HOME = 'C:\\Program Files\\nodejs'
         YARN_HOME = 'C:\\Users\\Deployer\\AppData\\Roaming\\npm'
         PATH = "${NODEJS_HOME};${YARN_HOME};${env.PATH}"
-        DEPLOY_PATH = 'weather-ui/publish'
+        DEPLOY_PATH = 'ac-ui/publish'
     }
 
     stages {
         stage('Clone Source') {
             steps {
-                git credentialsId: 'CongMinh7700', url: 'https://github.com/CongMinh1310/weather-ui.git', branch: 'main'
+                git credentialsId: 'CongMinh7700', url: 'https://github.com/CongMinh1310/ac-ui.git', branch: 'main'
             }
         }
 
