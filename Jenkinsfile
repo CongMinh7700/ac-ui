@@ -55,7 +55,7 @@ pipeline {
                     sshPublisher(
                         publishers: [
                             sshPublisherDesc(
-                                configName: 'UbtService02',
+                                configName: 'UbtServiceDev',
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'build.tar.gz',
